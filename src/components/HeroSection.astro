@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets';
+import heroImage from '../assets/images/hero.jpg';
+---
+
+<section
+  class="hero section-shell grid items-center md:grid-cols-[1fr_.82fr]"
+  aria-labelledby="hero-title"
+>
+  <div class="hero-copy">
+    <p class="eyebrow">
+      Save the date <span class="rule"></span> 18.03.2027
+    </p>
+    <h1 id="hero-title">
+      <span>Giulia</span>
+      <em>&amp;</em>
+      <span>Mattia</span>
+    </h1>
+    <p class="hero-intro">
+      Ci sposiamo.
+      <br />E non vediamo l'ora di festeggiare con voi.
+    </p>
+    <a class="button button-dark" href="#rsvp">
+      Conferma la tua presenza <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+  <div class="hero-art">
+    <Image
+      src={heroImage}
+      alt="Giulia e Mattia"
+      widths={[480, 720, 960]}
+      sizes="(max-width: 700px) 78vw, 38vw"
+    />
+    <div class="art-note">
+      la nostra
+      <br />
+      fotografia
+    </div>
+  </div>
+  <a class="scroll-cue" href="#story">
+    <span>Scorri</span>
+    <i aria-hidden="true">↓</i>
+  </a>
+</section>

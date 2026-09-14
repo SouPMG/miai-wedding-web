@@ -1,0 +1,28 @@
+@use 'tokens' as *;
+
+.site-footer {
+  width: min(1180px, calc(100% - 64px));
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+  padding-block: 60px;
+  .eyebrow {
+    margin-bottom: 12px;
+  }
+  a,
+  strong {
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+}
+.footer-note {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 11px;
+  margin: 38px 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}

@@ -1,0 +1,58 @@
+@use 'tokens' as *;
+
+.timeline {
+  padding-block: 100px 115px;
+}
+.section-dark {
+  .section-label,
+  .eyebrow {
+    color: var(--blue);
+  }
+}
+.timeline-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 48px 0 65px;
+  p {
+    color: var(--blue);
+    font: italic 18px/1.45 $font-display;
+  }
+}
+.timeline-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid rgb(248 246 240 / 25%);
+}
+.timeline-item {
+  position: relative;
+  padding: 26px 20px 0 0;
+  &:not(:last-child) {
+    border-right: 1px solid rgb(248 246 240 / 25%);
+  }
+  &:not(:first-child) {
+    padding-left: 20px;
+  }
+  time {
+    color: var(--yellow);
+    font-size: 13px;
+  }
+  h3 {
+    font: 400 23px $font-display;
+    margin: 57px 0 8px;
+  }
+  p {
+    color: var(--blue);
+    font-size: 13px;
+    margin: 0;
+  }
+}
+.timeline-dot {
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: var(--yellow);
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+}

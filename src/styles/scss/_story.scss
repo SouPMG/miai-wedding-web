@@ -1,0 +1,23 @@
+@use 'tokens' as *;
+
+.story {
+  padding-block: 150px 170px;
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+}
+.story-content {
+  max-width: 650px;
+}
+h2 {
+  font-size: clamp(50px, 7vw, 94px);
+  line-height: 0.93;
+  margin-bottom: 32px;
+}
+.signature {
+  font: italic 18px/1.6 $font-display;
+  margin-top: 42px;
+  strong {
+    font-weight: 400;
+    color: var(--yellow);
+  }
+}

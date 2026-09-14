@@ -1,0 +1,39 @@
+@use 'tokens' as *;
+
+.site-header {
+  width: min(1180px, calc(100% - 64px));
+  margin: auto;
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.monogram,
+.footer-brand {
+  font-family: $font-display;
+  font-size: 25px;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  span {
+    color: var(--yellow);
+    font-style: italic;
+  }
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: var(--yellow);
+    }
+  }
+}
+.nav-rsvp {
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 5px;
+}

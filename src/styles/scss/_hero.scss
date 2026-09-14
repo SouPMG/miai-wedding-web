@@ -1,0 +1,93 @@
+@use 'tokens' as *;
+
+.hero {
+  min-height: calc(100vh - 88px);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 0.82fr;
+  align-items: center;
+  gap: 8%;
+  padding-block: 30px 70px;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.rule {
+  display: inline-block;
+  width: 38px;
+  border-top: 1px solid currentColor;
+  vertical-align: middle;
+  margin-inline: 12px;
+}
+
+h1 {
+  font-size: clamp(64px, 9vw, 132px);
+  line-height: 0.82;
+  margin: 0 0 36px;
+
+  span {
+    display: block;
+  }
+
+  em {
+    font-size: 0.46em;
+    line-height: 1;
+    margin: 5px 0;
+    display: block;
+    transform: translateX(12%);
+  }
+}
+
+.hero-intro {
+  color: var(--muted);
+  line-height: 1.55;
+  margin-bottom: 30px;
+}
+
+.hero-art {
+  aspect-ratio: 0.88;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.art-note {
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  bottom: 20px;
+  font: italic 14px $font-display;
+  color: rgb(32 53 74 / 75%);
+}
+
+.scroll-cue {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--muted);
+  writing-mode: vertical-rl;
+
+  i {
+    font-style: normal;
+    font-size: 18px;
+  }
+}
