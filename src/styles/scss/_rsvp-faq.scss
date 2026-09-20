@@ -3,24 +3,29 @@
 .rsvp {
   padding-block: 120px 135px;
 }
+
 .rsvp-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12%;
   margin-top: 50px;
 }
+
 .rsvp-form {
   display: grid;
   gap: 18px;
+
   label {
     color: var(--muted);
     font-size: 12px;
   }
+
   .button {
     justify-self: start;
     margin-top: 14px;
   }
 }
+
 input,
 select,
 textarea {
@@ -33,30 +38,39 @@ textarea {
   font: 16px $font-body;
   outline: 0;
   resize: vertical;
+
   &:focus {
-    border-color: var(--yellow);
+    border-color: var(--secondary);
   }
 }
+
 .faq {
   padding-block: 100px 120px;
+
   h2 {
     margin: 55px 0 50px;
   }
 }
+
 .faq-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10%;
 }
+
 details {
   border-top: 1px solid var(--line);
   padding: 21px 0;
-  &:last-child {
+
+  &:last-child,
+  &:nth-child(3) {
     border-bottom: 1px solid var(--line);
   }
+
   &[open] summary::after {
     content: '−';
   }
+
   p {
     color: var(--muted);
     line-height: 1.6;
@@ -64,17 +78,20 @@ details {
     margin: 15px 0 2px;
   }
 }
+
 summary {
   cursor: pointer;
   list-style: none;
   font: 21px $font-display;
+
   &::-webkit-details-marker {
     display: none;
   }
+
   &::after {
     content: '+';
     float: right;
-    color: var(--yellow);
+    color: var(--ink);
     font: 25px $font-body;
   }
 }

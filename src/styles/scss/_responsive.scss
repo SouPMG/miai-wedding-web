@@ -42,17 +42,46 @@
 
   .story {
     display: block;
-    padding-block: 100px 110px;
+    padding-block: 80px;
   }
 
   .story-content {
     margin-top: 55px;
   }
 
+  #details,
+  #timeline,
+  #faq,
+  .directions,
+  .section-tint,
+  .section-dark {
+    margin: 0;
+    width: 100%;
+    padding-block: 80px;
+  }
+
+  .directions,
+  .rsvp {
+    margin: 0;
+    width: 100%;
+    padding-block: 80px;
+    padding-inline: 20px;
+  }
+
+  .rsvp-form {
+    .button {
+      margin-bottom: 0;
+    }
+  }
+
   .section-heading,
   .timeline-head {
     display: block;
     margin: 45px 0;
+  }
+
+  .timeline-item:not(:last-child) {
+    border-right: 0;
   }
 
   .heading-note,
@@ -70,6 +99,14 @@
   .rsvp-layout,
   .faq-grid {
     grid-template-columns: 1fr;
+  }
+
+  .faq-grid {
+    details {
+      &:nth-child(3) {
+        border-bottom: none;
+      }
+    }
   }
 
   .event-card {

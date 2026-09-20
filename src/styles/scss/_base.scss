@@ -32,12 +32,12 @@ h2 {
   font-family: $font-display;
   font-weight: 400;
   letter-spacing: -0.035em;
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 h1 em,
 h2 em {
-  color: var(--secondary);
+  color: var(--primary);
   font-weight: 400;
 }
 
@@ -94,12 +94,13 @@ h2 em {
   cursor: pointer;
 
   &:hover {
-    background: var(--yellow);
+    color: var(--ink);
+    background: var(--secondary);
   }
 }
 
 .button-dark {
-  background: var(--blue);
+  background: var(--primary);
   color: var(--paper);
 }
 
@@ -111,7 +112,7 @@ h2 em {
 
 .section-dark {
   width: 100%;
-  background: var(--ink);
+  background: var(--primary);
   color: var(--paper);
   padding-inline: max(32px, calc((100% - 1180px) / 2));
 }

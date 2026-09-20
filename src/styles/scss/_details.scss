@@ -2,6 +2,11 @@
 
 .details {
   padding-block: 100px 125px;
+
+  .event-date {
+    font-size: 24px;
+    color: var(--primary);
+  }
 }
 
 .section-heading {
@@ -32,16 +37,17 @@
 .event-card {
   padding: 32px;
   min-height: 325px;
-  background: var(--blue);
+  background: var(--primary);
   position: relative;
+  color: #ffffff;
 
   &.featured {
-    background: var(--yellow);
+    background: var(--secondary);
     color: var(--ink);
 
     a {
       &:hover {
-        color: var(--blue);
+        color: var(--primary);
       }
     }
   }
@@ -52,7 +58,7 @@
   }
 
   p:not(.event-number):not(.event-type):not(.event-time) {
-    color: var(--muted);
+    color: #ffffff;
     line-height: 1.55;
   }
 
@@ -71,17 +77,17 @@
     padding-bottom: 4px;
 
     &:hover {
-      color: var(--yellow);
+      color: var(--secondary);
     }
   }
 }
 
 .event-number {
-  color: var(--yellow);
+  color: var(--secondary);
 }
 
 .featured .event-number {
-  color: var(--blue);
+  color: var(--primary);
 }
 
 .event-type {

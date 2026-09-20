@@ -38,11 +38,11 @@
 .info-icon {
   width: 26px;
   height: 26px;
-  border: 1px solid var(--yellow);
+  border: 1px solid var(--tertiary);
   border-radius: 50%;
   display: grid;
   place-items: center;
-  color: var(--yellow);
+  color: var(--tertiary);
   font-size: 12px;
   flex: 0 0 auto;
 }
@@ -55,12 +55,12 @@
   padding-bottom: 7px;
 
   &:hover {
-    color: var(--yellow);
+    color: var(--secondary);
   }
 }
 
 .map {
-  background: var(--blue);
+  background: var(--primary);
   min-height: 190px;
   display: flex;
   align-items: center;
