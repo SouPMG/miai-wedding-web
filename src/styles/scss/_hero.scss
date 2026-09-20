@@ -23,7 +23,7 @@
   margin-inline: 12px;
 }
 
-h1 {
+#hero-title {
   font-size: clamp(64px, 9vw, 132px);
   line-height: 0.82;
   margin: 0 0 36px;
@@ -32,12 +32,23 @@ h1 {
     display: block;
   }
 
+  .bride-name {
+    color: var(--primary);
+    text-align: left;
+  }
+
+  .groom-name {
+    color: var(--secondary);
+    text-align: right;
+  }
+
   em {
+    color: var(--tertiary);
     font-size: 0.46em;
     line-height: 1;
     margin: 5px 0;
     display: block;
-    transform: translateX(12%);
+    text-align: center;
   }
 }
 

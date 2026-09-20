@@ -4,19 +4,22 @@
   aria-labelledby="details-title"
 >
   <div class="section-label">
-    <span>02</span> Il giorno
+    <span class="blue">02</span> Il giorno
   </div>
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Giovedì 18 marzo 2027</p>
       <h2 id="details-title">
         Quando
         <br />
-        <em>&amp; dove</em>
+        <em>
+          <span>&amp;</span> dove
+        </em>
       </h2>
     </div>
-    <p class="heading-note">Due luoghi, un solo giorno da ricordare.</p>
   </div>
+  <p class="eyebrow text-xl! underline underline-offset-8 font-bold text-center">
+    Giovedì 18 marzo 2027
+  </p>
   <div class="event-grid">
     <article class="event-card">
       <p class="event-number">01</p>
@@ -55,11 +58,10 @@
   aria-labelledby="directions-title"
 >
   <div class="section-label">
-    <span>03</span> Indicazioni
+    <span class="yellow">03</span> Indicazioni
   </div>
   <div class="directions-layout">
     <div>
-      <p class="eyebrow">Arrivare è semplice</p>
       <h2 id="directions-title">
         Tutto quello
         <br />
@@ -71,7 +73,9 @@
         <span class="info-icon">P</span>
         <div>
           <h3>Parcheggio</h3>
-          <p>Parcheggio gratuito disponibile all'ingresso della villa.</p>
+          <p>
+            Parcheggio gratuito disponibile all'ingresso di Antica Masseria.
+          </p>
         </div>
       </div>
       <div>
@@ -86,8 +90,19 @@
       </div>
     </div>
   </div>
-  <div class="map-placeholder" aria-label="Spazio riservato alla mappa">
-    <span>mappa della zona</span>
-    <strong>43°45' N&nbsp; · &nbsp;11°15' E</strong>
+  <div
+    class="map"
+    aria-label="Mappa per il ristorante Antica Masseria"
+    role="region"
+  >
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.3516495726126!2d11.754610976754009!3d45.402248037569386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ed89023842969%3A0x8f76b97eaf11fc14!2sRistorante%20Antica%20Masseria!5e0!3m2!1sit!2sit!4v1789901093382!5m2!1sit!2sit"
+      width="100%"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
   </div>
 </section>
