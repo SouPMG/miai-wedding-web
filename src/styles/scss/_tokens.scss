@@ -1,17 +1,14 @@
 :root {
-  --primary: #599deb;
-  --secondary: #f7c23c;
-  --tertiary: #aeb487;
+  --primary: #7d9bc0;
+  --secondary: #f1e782;
+  --tertiary: #92ad6c;
   --ink: #20354a;
   --muted: #2f3a43;
-  --paper: #fbfaf5;
+  --paper: #f1f2f3;
   --cream: #fff4cf;
-  --yellow: #f5d687;
-  --blue: #a4c4e9;
-  --green: #aeb487;
   --line: rgb(32 53 74 / 18%);
 }
 
 $breakpoint-mobile: 700px;
-$font-display: 'Playfair Display', serif;
-$font-body: 'DM Sans', sans-serif;
+$font-display: 'bulletin-typewriter-mn', 'Courier New', monospace;
+$font-body: 'bulletin-typewriter-mn', 'Courier New', monospace;
