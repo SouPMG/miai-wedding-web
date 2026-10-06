@@ -1,8 +1,24 @@
 @use 'tokens' as *;
 
+.hero-background {
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: url('/images/trees.svg') center top / 100% auto no-repeat;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
 .hero {
   min-height: calc(100vh - 88px);
   position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 0.82fr;
   align-items: center;
@@ -64,6 +80,7 @@
   overflow: hidden;
   display: grid;
   place-items: center;
+  border-color: var(--tertiary);
 
   img {
     position: absolute;
@@ -72,15 +89,6 @@
     height: 100%;
     object-fit: cover;
   }
-}
-
-.art-note {
-  position: absolute;
-  z-index: 2;
-  left: 20px;
-  bottom: 20px;
-  font: italic 14px $font-display;
-  color: rgb(32 53 74 / 75%);
 }
 
 .scroll-cue {

@@ -3,42 +3,42 @@ import { Image } from 'astro:assets';
 import heroImage from '../assets/images/hero.jpg';
 ---
 
-<section
-  class="hero section-shell grid items-center md:grid-cols-[1fr_.82fr]"
-  aria-labelledby="hero-title"
->
-  <div class="hero-copy">
-    <p class="eyebrow">
-      Save the date <span class="rule"></span> 18.03.2027
-    </p>
+<section class="hero-background" aria-labelledby="hero-title">
+  <div class="hero section-shell grid items-center md:grid-cols-[1fr_.82fr]">
+    <div class="hero-copy">
+      <p class="eyebrow">
+        Save the date <span class="rule"></span> 18.03.2027
+      </p>
 
-    <h1 id="hero-title">
-      <span class="bride-name text-shadow-lg">Giulia</span>
-      <em class="text-shadow-lg">&amp;</em>
-      <span class="groom-name text-shadow-lg">Mattia</span>
-    </h1>
+      <h1 id="hero-title">
+        <span class="bride-name text-shadow-lg">Giulia</span>
+        <em class="text-shadow-lg">&amp;</em>
+        <span class="groom-name text-shadow-lg">Mattia</span>
+      </h1>
 
-    <p class="hero-intro">
-      Ci sposiamo!
-      <br />E non vediamo l'ora di festeggiare con voi.
-    </p>
+      <p class="hero-intro">
+        Ci sposiamo!
+        <br />E non vediamo l'ora di festeggiare con voi.
+      </p>
 
-    <a class="button button-dark" href="#rsvp">
-      Ci sarete? <span aria-hidden="true">↗</span>
+      <a class="button button-dark" href="#rsvp">
+        Ci sarete? <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <div class="hero-art rotate-5 border-4 border-dashed">
+      <Image
+        src={heroImage}
+        alt="Giulia e Mattia"
+        widths={[480, 720, 960]}
+        sizes="(max-width: 700px) 78vw, 38vw"
+        class="p-2"
+      />
+    </div>
+
+    <a class="scroll-cue" href="#story">
+      <span>Scorri</span>
+      <i aria-hidden="true">→</i>
     </a>
   </div>
-
-  <div class="hero-art shadow-lg shadow-">
-    <Image
-      src={heroImage}
-      alt="Giulia e Mattia"
-      widths={[480, 720, 960]}
-      sizes="(max-width: 700px) 78vw, 38vw"
-    />
-  </div>
-
-  <a class="scroll-cue" href="#story">
-    <span>Scorri</span>
-    <i aria-hidden="true">→</i>
-  </a>
 </section>
