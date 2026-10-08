@@ -1,5 +1,5 @@
 ---
-import RsvpForm from './RsvpForm';
+import RsvpForm from '../react/RsvpForm';
 
 const formId = import.meta.env.PUBLIC_FORMSPREE_FORM_ID;
 ---
@@ -21,6 +21,7 @@ const formId = import.meta.env.PUBLIC_FORMSPREE_FORM_ID;
         preferita!
       </p>
     </div>
+
     <RsvpForm client:load {formId} />
   </div>
 </section>
