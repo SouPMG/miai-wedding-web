@@ -1,9 +1,9 @@
 @use 'tokens' as *;
 
 @media (max-width: $breakpoint-mobile) {
-  .hero-background::before {
-    background-position: left top;
-    background-size: 200% auto;
+  .story-background::before {
+    background-position: left center;
+    background-size: cover;
   }
 
   .timeline-item:not(:last-child) {

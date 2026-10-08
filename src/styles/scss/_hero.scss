@@ -1,17 +1,5 @@
 @use 'tokens' as *;
 
-.hero-background {
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    background: url('/images/trees.svg') center top / 100% auto no-repeat;
-    opacity: 0.3;
-    pointer-events: none;
-  }
-}
-
 .rule {
   display: inline-block;
   width: 38px;
