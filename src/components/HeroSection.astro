@@ -4,7 +4,7 @@ import heroImage from '../assets/images/hero.jpg';
 ---
 
 <section class="hero-background relative w-full" aria-labelledby="hero-title">
-  <div class="relative mx-auto flex min-h-0 w-[calc(100%-40px)] flex-col items-stretch gap-[45px] pt-[70px] pb-[70px] md:grid md:min-h-[calc(100vh-88px)] md:w-[min(1180px,calc(100%-64px))] md:grid-cols-[1fr_.82fr] md:grid-rows-[1fr_auto] md:items-center md:gap-x-[8%] md:gap-y-0 md:pt-[30px] md:pb-6">
+  <div class="container relative mx-auto flex min-h-0 flex-col items-stretch gap-[45px] px-5 pt-[70px] pb-[70px] md:grid md:min-h-[calc(100vh-88px)] md:grid-cols-[1fr_.82fr] md:grid-rows-[1fr_auto] md:items-center md:gap-x-[8%] md:gap-y-0 md:px-8 md:pt-[30px] md:pb-6">
     <div class="relative z-1">
       <p class="eyebrow">
         Save the date <span class="rule"></span> 18.03.2027
@@ -26,13 +26,13 @@ import heroImage from '../assets/images/hero.jpg';
       </a>
     </div>
 
-    <div class="aspect-[0.88] w-4/5 self-center overflow-hidden border-4 border-dashed border-tertiary rotate-5 md:w-auto md:self-auto">
+    <div class="aspect-[0.88] w-4/5 self-center overflow-hidden border-4 border-dashed border-tertiary p-2 md:p-3 rotate-5 rounded-xl md:w-auto md:self-auto">
       <Image
         src={heroImage}
         alt="Giulia e Mattia"
         widths={[480, 720, 960]}
         sizes="(max-width: 768px) 78vw, 38vw"
-        class="block size-full object-cover object-[center_65%] p-2"
+        class="block size-full rounded-md object-cover object-[center_65%]"
       />
     </div>
 
