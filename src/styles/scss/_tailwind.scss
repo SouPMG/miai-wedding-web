@@ -1,0 +1,25 @@
+@layer components {
+  .button {
+    @apply inline-flex cursor-pointer justify-between gap-[30px] border-0 px-[19px] py-[15px] text-xs tracking-[0.06em] no-underline;
+  }
+
+  .button-primary {
+    @apply bg-primary text-paper;
+  }
+
+  .button-primary:hover {
+    @apply bg-secondary text-ink;
+  }
+
+  .copy-text {
+    @apply max-w-[500px] leading-[1.7] text-muted;
+  }
+
+  .footer-note {
+    @apply col-span-full mt-[38px] border-t border-line pt-5 text-[11px] text-muted;
+  }
+
+  .form-label {
+    @apply text-xs text-muted;
+  }
+}

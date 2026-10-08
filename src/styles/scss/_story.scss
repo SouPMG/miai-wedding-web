@@ -1,15 +1,3 @@
-@use 'tokens' as *;
-
-.story {
-  padding-block: 150px 170px;
-  display: grid;
-  grid-template-columns: 1fr 1.8fr;
-}
-
-.story-content {
-  max-width: 650px;
-}
-
 h2 {
   font-size: clamp(50px, 7vw, 94px);
   line-height: 0.93;

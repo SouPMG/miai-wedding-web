@@ -41,15 +41,9 @@ h2 em {
   font-weight: 400;
 }
 
-.section-shell {
-  width: min(1180px, calc(100% - 64px));
-  margin: auto;
-}
-
 .eyebrow,
 .section-label,
-.event-type,
-.event-number {
+.event-type {
   font-size: 11px;
   letter-spacing: 0.17em;
   text-transform: uppercase;
@@ -65,54 +59,4 @@ h2 em {
   align-items: center;
   gap: 15px;
   color: var(--muted);
-
-  span.yellow {
-    color: var(--secondary);
-  }
-
-  span.blue {
-    color: var(--primary);
-  }
-}
-
-.lead {
-  color: var(--muted);
-  line-height: 1.7;
-  max-width: 500px;
-}
-
-.button {
-  display: inline-flex;
-  gap: 30px;
-  justify-content: space-between;
-  border: 0;
-  padding: 15px 19px;
-  font: inherit;
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover {
-    color: var(--ink);
-    background: var(--secondary);
-  }
-}
-
-.button-dark {
-  background: var(--primary);
-  color: var(--paper);
-}
-
-.section-tint {
-  width: 100%;
-  background: var(--cream);
-  padding-inline: max(32px, calc((100% - 1180px) / 2));
-}
-
-.section-dark {
-  width: 100%;
-  background: var(--primary);
-  color: var(--paper);
-  padding-inline: max(32px, calc((100% - 1180px) / 2));
 }

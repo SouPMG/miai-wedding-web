@@ -1,34 +1,5 @@
 @use 'tokens' as *;
 
-.timeline {
-  padding-block: 100px 115px;
-}
-
-.section-dark {
-  .section-label,
-  .eyebrow {
-    color: var(--paper);
-  }
-}
-
-.timeline-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  margin: 48px 0 65px;
-
-  p {
-    color: var(--primary);
-    font: italic 18px/1.45 $font-display;
-  }
-}
-
-.timeline-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid rgb(248 246 240 / 25%);
-}
-
 .timeline-item {
   position: relative;
   padding: 26px 20px 0 0;

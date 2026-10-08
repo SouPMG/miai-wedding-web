@@ -1,42 +1,18 @@
 @use 'tokens' as *;
 
 .details {
-  padding-block: 100px 125px;
-
   .event-date {
     font-size: 24px;
     color: var(--primary);
   }
 }
 
-.section-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  margin: 40px 0;
-
-  #details-title {
-    em span {
-      color: var(--tertiary);
-    }
-  }
-}
-
-.heading-note {
-  color: var(--muted);
-  font: italic 18px $font-display;
-  max-width: 190px;
-}
-
-.event-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2px;
+#details-title em span {
+  color: var(--tertiary);
 }
 
 .event-card {
   padding: 32px;
-  min-height: 325px;
   background: var(--primary);
   position: relative;
   color: #ffffff;
@@ -57,12 +33,12 @@
     margin-bottom: 15px;
   }
 
-  p:not(.event-number):not(.event-type):not(.event-time) {
+  p:not(.event-type):not(.event-time) {
     color: #ffffff;
     line-height: 1.55;
   }
 
-  &.featured p:not(.event-number):not(.event-type):not(.event-time),
+  &.featured p:not(.event-type):not(.event-time),
   &.featured a {
     color: var(--ink);
   }
@@ -80,14 +56,6 @@
       color: var(--secondary);
     }
   }
-}
-
-.event-number {
-  color: var(--secondary);
-}
-
-.featured .event-number {
-  color: var(--primary);
 }
 
 .event-type {

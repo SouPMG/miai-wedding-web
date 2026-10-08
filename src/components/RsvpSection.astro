@@ -1,22 +1,26 @@
-<section id="rsvp" class="rsvp section-shell" aria-labelledby="rsvp-title">
+<section
+  id="rsvp"
+  class="rsvp mx-auto w-full px-5 py-20 md:w-[min(1180px,calc(100%-64px))] md:px-0 md:pt-[120px] md:pb-[135px]"
+  aria-labelledby="rsvp-title"
+>
   <div class="section-label">04 RSVP</div>
-  <div class="rsvp-layout">
+  <div class="rsvp-layout mt-[50px] grid grid-cols-1 gap-[12%] md:grid-cols-2">
     <div>
       <h2 id="rsvp-title" class="text-shadow-lg">
         Ci sarete?
       </h2>
-      <p class="lead">
+      <p class="copy-text">
         Fatecelo sapere entro il <span class="font-bold">18 gennaio 2027</span>.
         <br />E non dimenticate di indicarci la vostra canzone d'amore
         preferita!
       </p>
     </div>
-    <form class="rsvp-form">
-      <label>
+    <form class="grid gap-[18px]">
+      <label class="form-label">
         Il tuo nome
         <input type="text" name="name" placeholder="Nome e cognome" />
       </label>
-      <label>
+      <label class="form-label">
         Quanti sarete?
         <select name="guests">
           <option>1 persona</option>
@@ -27,7 +31,7 @@
           <option>6 persone</option>
         </select>
       </label>
-      <label>
+      <label class="form-label">
         Allergie o intolleranze
         <textarea
           name="notes"
@@ -35,11 +39,14 @@
           placeholder="Scrivici qui, se necessario"
         ></textarea>
       </label>
-      <label>
+      <label class="form-label">
         La vostra canzone d'amore preferita 🩵
         <input type="text" name="song" placeholder="Titolo e artista" />
       </label>
-      <button class="button button-dark" type="submit">
+      <button
+        class="button button-primary mt-[14px] justify-self-start"
+        type="submit"
+      >
         Conferma <span aria-hidden="true">↗</span>
       </button>
     </form>
