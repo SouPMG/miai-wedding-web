@@ -2,8 +2,14 @@
 
 @media (max-width: $breakpoint-mobile) {
   .story-background::before {
+    background-position: left 48%;
+    background-size: auto 118%;
+  }
+
+  .cake-divider {
+    height: 23rem;
     background-position: left center;
-    background-size: cover;
+    background-size: auto 100%;
   }
 
   .timeline-item:not(:last-child) {
